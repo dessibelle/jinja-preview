@@ -1,0 +1,38 @@
+html, body{
+    height: 100%
+}
+
+/* Custom container */
+.container-full {
+    margin: 0 auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*.container-full .row {
+    margin: 0;
+}*/
+
+#template-editor,
+#template-renderer,
+#context-editor {
+    width: 100%;
+}
+
+#template-renderer,
+#template-editor {
+    height: 500px;
+}
+
+#context-editor {
+    height: 500px;
+}
+
+iframe {
+    border: none;
+}
+
+#render-iframe {
+    width: 100%;
+    height: 100%;
+}

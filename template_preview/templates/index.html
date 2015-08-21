@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="container-full">
+        <div class="row" id="top">
+            <div class="col-sm-6 col-xs-12">
+                {% block template_editor %}
+                    <div id="template-editor">{% include "example-content.html" %}</div>
+                {% endblock %}
+            </div>
+            <div class="col-sm-6 col-xs-12">
+                {% block template_renderer %}
+                    <div id="template-renderer">
+                        <iframe src="" id="render-iframe"></iframe>
+                    </div>
+                {% endblock %}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="context-editor">{% include "example-context.html" %}</div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
