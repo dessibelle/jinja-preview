@@ -3,11 +3,20 @@
     &lt;head&gt;
         &lt;meta charset="utf8"&gt;
         &lt;title&gt;&lbrace;&lbrace; page_title &rbrace;&rbrace;&lt;/title&gt;
+        &lt;link rel="stylesheet" type="text/css" href="&lbrace;&lbrace; stylesheet_url &rbrace;&rbrace;"&gt;
     &lt;/head&gt;
     &lt;body&gt;
         &lbrace;&percnt; block content &percnt;&rbrace;
             &lt;h1&gt;&lbrace;&lbrace; heading &rbrace;&rbrace;&lt;/h1&gt;
             &lt;p&gt;&lbrace;&lbrace; lead &rbrace;&rbrace;&lt;/p&gt;
         &lbrace;&percnt; endblock &percnt;&rbrace;
+
+        &lt;dl&gt;
+            &lbrace;&percnt; for item in items &percnt;&rbrace;
+                &lt;dt&gt;&lbrace;&lbrace; item.key &rbrace;&rbrace;&lt;/dt&gt;
+                &lt;dd&gt;&lbrace;&lbrace; item.value &rbrace;&rbrace;&lt;/dd&gt;
+            &lbrace;&percnt; endfor &percnt;&rbrace;
+            &lt;dt&gt;&lt;/dt&gt;
+        &lt;/dl&gt;
     &lt;/body&gt;
 &lt;/html&gt;
